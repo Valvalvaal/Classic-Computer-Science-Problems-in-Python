@@ -2,8 +2,6 @@
 # Using memoization to improve runtime of the algorithm:
 from functools import lru_cache
 
-test = 50
-
 
 @lru_cache(maxsize=None)  # Automatic memoization
 def fib(n: int) -> int:
@@ -14,4 +12,5 @@ def fib(n: int) -> int:
     return fib(n - 1) + fib(n - 2)
 
 
+test = int(input("n: "))
 print(f"fib({test}) is {fib(test)}")
