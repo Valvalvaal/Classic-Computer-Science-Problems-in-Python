@@ -1,5 +1,4 @@
 from secrets import token_bytes
-from typing import Tuple
 
 
 class CompressedGene:
