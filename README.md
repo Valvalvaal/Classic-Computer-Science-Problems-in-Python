@@ -1,6 +1,6 @@
 # Classic-Computer-Science-Problems-in-Python
 In this repo I'll be following the exercises from the book Classic Computer Science Problems in Python by David Kopec
 
-1. Fibonacci[https://github.com/Valvalvaal/Classic-Computer-Science-Problems-in-Python/blob/main/small-problems/fibonacci.py]
-2. Trivial compression[https://github.com/Valvalvaal/Classic-Computer-Science-Problems-in-Python/blob/main/small-problems/trivial_compression.py]
+1. [Fibonacci](https://github.com/Valvalvaal/Classic-Computer-Science-Problems-in-Python/blob/main/small-problems/fibonacci.py)
+2. [Trivial compression](https://github.com/Valvalvaal/Classic-Computer-Science-Problems-in-Python/blob/main/small-problems/trivial_compression.py)
 3. Unbreakable encryption
