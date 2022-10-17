@@ -1,5 +1,5 @@
 # Classic-Computer-Science-Problems-in-Python
-In this repo I'll be following the exercises from the book Classic Computer Science Problems in Python by David Kopec
+In this repo I'll be following the exercises from the book [Classic Computer Science Problems in Python](https://www.manning.com/books/classic-computer-science-problems-in-python) by David Kopec
 
 1. Small Problems
 
