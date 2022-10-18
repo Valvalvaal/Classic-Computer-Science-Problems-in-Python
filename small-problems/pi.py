@@ -9,7 +9,7 @@ def calculate_pi(n_terms: int) -> float:
 
     for _ in range(n_terms):
         pi += operation * (num/den)
-        operation = -operation  # Sign changes every iteration
+        operation *= -1.0  # Sign changes every iteration
         den += 2
 
     return pi
