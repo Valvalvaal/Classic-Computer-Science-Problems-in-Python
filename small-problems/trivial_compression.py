@@ -26,7 +26,8 @@ class CompressedGene:
         gene = ""
         # jump every two bits, exclude sentinel with -1
         for i in range(0, self.bit_string.bit_length() - 1, 2):
-            bits = self.bit_string >> i & 0b11  # gets last two bits comparing with 0b11
+            # first shifts right i spots, then gets last two bits comparing with 0b11
+            bits = self.bit_string >> i & 0b11
             if bits == 0b00:
                 gene += 'A'
             elif bits == 0b01:
@@ -47,7 +48,7 @@ if __name__ == "__main__":
     from sys import getsizeof
 
     # TEST with example
-    original = "ACGTACGTGCTAGATGATATAACGCGCTGCCGTAGCTGACTAAATCTCGCGTATTATATATATA" * 100
+    original = "ACGTACCTGTGCTGCTCGCTATCATCGCTCGATGACTAAGCATCAGCTA" * 100
 
     print(f"Original is {getsizeof(original)} bytes")
     # Compress
