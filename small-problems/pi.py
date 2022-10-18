@@ -2,4 +2,18 @@
 
 
 def calculate_pi(n_terms: int) -> float:
-    pass
+    num = 4.0
+    den = 1
+    operation = 1
+    pi = 0.0
+
+    for _ in range(n_terms):
+        pi += operation * (num/den)
+        operation = -operation  # Sign changes every iteration
+        den += 2
+
+    return pi
+
+
+if __name__ == "__main__":
+    print(calculate_pi(10))
