@@ -13,10 +13,20 @@ def encrypt(original: str) -> Tuple[int, int]:
     dummy = random_key(len(original_bytes))
     original_key = int.from_bytes(original_bytes, "big")
     encrypted = original_key ^ dummy
-    print(f"dummy:     {bin(dummy)}")
-    print(f"original:  {bin(original_key)}")
-    print(f"encrypted: {bin(encrypted)}")
+    #print(f"dummy:     {bin(dummy)}")
+    #print(f"original:  {bin(original_key)}")
+    #print(f"encrypted: {bin(encrypted)}")
     return dummy, encrypted
 
 
-encrypt("Hi!")
+def decrypt(key1: int, key2: int) -> str:
+    decrypted = key1 ^ key2  # reverse XOR operation, returns original_key
+    # +7 to round length up when //8.
+    temp = decrypted.to_bytes((decrypted.bit_length() + 7) // 8, "big")
+    return temp.decode()
+
+
+if __name__ == "__main__":
+
+    k1, k2 = encrypt("Check this out!")
+    print(decrypt(k1, k2))
