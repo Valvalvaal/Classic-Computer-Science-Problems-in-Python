@@ -23,7 +23,7 @@ tower2 = Stack()
 tower3 = Stack()
 
 for i in range(num_discs):
-    tower1.push(i+1)  # 3 discs, 1 to 3 1 beign the biggest
+    tower1.push(i+1)  # 3 discs, 1 to 3 1 being the biggest
 
 print(tower1)
 
