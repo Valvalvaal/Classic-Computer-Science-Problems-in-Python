@@ -13,3 +13,5 @@ In this repo I'll be following the exercises from the book [Classic Computer Sci
 
 
    1.4. [Calculating pi](https://github.com/Valvalvaal/Classic-Computer-Science-Problems-in-Python/blob/main/small-problems/pi.py)
+   
+   1.5. [Towers of Hanoi](https://github.com/Valvalvaal/Classic-Computer-Science-Problems-in-Python/blob/main/small-problems/hanoi.py)
